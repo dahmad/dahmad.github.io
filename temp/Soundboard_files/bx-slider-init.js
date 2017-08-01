@@ -1,4 +1,0 @@
-$(document).ready(function(){var slideWidth=160;var slider_number_new=0;if(typeof($.cookie('session_slider_new'))!='undefined'){slider_number_new=$.cookie('session_slider_new');}
-var max=calcMaxSlides();var slider_session=$('.categories-slider').bxSlider({maxSlides:max,slideWidth:slideWidth,pager:false,onSlideAfter:function(){slider_number_new=slider_session.getCurrentSlide();$.cookie('session_slider_new',slider_number_new,{path:'/'});}});try{slider_session.goToSlide(slider_number_new);}catch(e){$.removeCookie('session_slider_new',{path:'/'});}
-$('.sort-box ul li').click(function(){$(this).addClass('active');});$(window).on('resize',function(){if(typeof slider_session.reloadSlider=='function')
-slider_session.reloadSlider({maxSlides:calcMaxSlides(),slideWidth:slideWidth,pager:false});});function calcMaxSlides(){var width=$(window).width();if(width<480)return 1;if(width<650)return 2;if(width<960)return 3;return $('.categories-slider li').length;}});
