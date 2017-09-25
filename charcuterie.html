@@ -1,5 +1,21 @@
 <!DOCTYPE HTML>
-
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
 <body>
 	<script>
   		function play(){
@@ -7,8 +23,33 @@
        			audio.play();
                  }
    </script>
+	<script>
+  		function play2(){
+       		var audio = document.getElementById("audio2");
+       			audio.play();
+                 }
+   </script>
 
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="assets/sample.wav" ></audio>
+
+<a href="#" class="button" onclick="play()">0000</a>
+<audio id="audio" src="assets/samples/0000.wav" ></audio>
+
+<a href="#" class="button" onclick="play2()">0001</a>
+<audio id="audio2" src="assets/samples/0001.wav" ></audio>
+
+<!-- <a href="#" class="button" onclick="play()">0002</a> -->
+<!-- <audio id="audio" src="assets/samples/0002.wav" ></audio> -->
+<!-- <a href="#" class="button" onclick="play()">0003</a> -->
+<!-- <audio id="audio" src="assets/samples/0003.wav" ></audio> -->
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+
