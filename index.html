@@ -31,10 +31,8 @@
     </style>
 </head>
 <body>
-                  <audio id="stavsoundboard" src="audio/StavSoundBoard.mp3"></audio>
 	<div class="container">
 		<div class="col-xs-12 col-sm-8">
-            <h2>StavBot</h2>
 
             <button class="btn btn-primary btn-lg" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Silence</button>
 
@@ -73,7 +71,7 @@
             var file = item.file;
             itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()">#title</button>'
               .replace(/#file/g, file)
-              .replace(/#title/g, title);
+              .replace(/#title/g, file);
           }
           document.getElementById('root').innerHTML += itemHTML;
         }
