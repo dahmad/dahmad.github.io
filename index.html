@@ -1,199 +1,82 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Donnie Ahmad</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en-US">
+<html manifest="dahmad.appcache">
+        
+<head>
+	<title>StavBot 420.69</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="...">
+	<meta name="description" content="HTML 5 soundboard.">
+	<meta name="keywords" content="HTML5, Mobile, Soundboard, IBM">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">
+	<style>
+		body {
+			margin-left: 20px;
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+		label {
+			font-weight: normal;
+		}
+		table, th, td {
+			border: 1px solid black;
+		}
+		td, th {
+			padding: 10px;
+		}
+            .btn { margin: 5px }
+    </style>
+</head>
+<body>
+                  <audio id="stavsoundboard" src="audio/StavSoundBoard.mp3"></audio>
+	<div class="container">
+		<div class="col-xs-12 col-sm-8">
+            <h2>StavBot</h2>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            <button class="btn btn-primary btn-lg" onclick="Array.from(document.getElementsByTagName('audio')).forEach(function(e){e.pause(); e.currentTime=0;})">Silence</button>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-							<!-- Header -->
-								<header id="header">
-									<!-- <a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a> -->
-									<!-- <ul class="icons">	 -->
-										<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
-										<!-- <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li> -->
-										<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
-										<!-- <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li> -->
-									</ul>
-								</header>
-
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Donnie Ahmad</h1>
-											<p>Data Scientist</p>
-										</header>
-										<p>Interested in applying scientific rigor to predictive modeling.</p>
-										<ul class="actions">
-											<li><a href="https://www.linkedin.com/in/donnie-ahmad-643b0982/" class="button big">LinkedIn</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Core Competencies</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-diamond"></span>
-											<div class="content">
-												<h3>sci-kit learn</h3>
-												<p>Regression, classifers, pipelines</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-paper-plane"></span>
-											<div class="content">
-												<h3>Pandas</h3>
-												<p>Dataframe manipulation, data munging, pickling.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-rocket"></span>
-											<div class="content">
-												<h3>SQL</h3>
-												<p>Table joining, reporting.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-signal"></span>
-											<div class="content">
-												<h3>Matplotlib.pyplot</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-									</div>
-								</section>
-<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Areas of Interest</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-diamond"></span>
-											<div class="content">
-												<h3>Deep Learning</h3>
-												<p>Image classification</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-paper-plane"></span>
-											<div class="content">
-												<h3>Music Information Retrieval</h3>
-												<p>Audio segmentation, genre identification</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-rocket"></span>
-											<div class="content">
-												<h3>Visualization</h3>
-												<p>Seaborn, Matplotlib.pyplot, d3.js, Tableau.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-signal"></span>
-											<div class="content">
-												<h3>Graphical UI/UX Design</h3>
-												<p>Kivy, pygame.</p>
-											</div>
-										</article>
-									</div>
-								</section>
-							
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Skills Showcase</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>General Assembly Capstone Project</h3>
-											<p>Libraries used: kivy, pygame, numpy, pandas, sklearn.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">See Code</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="charcuterie.html" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Coming soon ...</h3>
-											<p>.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">See Code</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
-
-						</div>
-					</div>
-
-
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                  <div id="root"></div>
+			<hr>
+		    <footer>
+				<p>Footer</p>
+		    </footer>
+		</div>
+	</div>
+      <script>
+        window.data = [
+          {
+            name: "Track One",
+            items: [
+              { title: "1", file: "audio/0000.wav" },
+              { title: "2", file: "audio/0001.mp3" },
+              { title: "3", file: "audio/0002.mp3" },
+              { title: "4", file: "audio/0003.mp3" },
+              { title: "5", file: "audio/0004.mp3" },
+              { title: "6", file: "audio/0005.mp3" },
+              { title: "7", file: "audio/0006.mp3" },
+              { title: "8", file: "audio/0007.mp3" },
+              { title: "9", file: "audio/0008.mp3" },
+              { title: "10", file: "audio/0009.mp3" },
+            ]
+          }
+        ];
+        var audioHTML = '';
+        for (var i = 0; i < window.data.length; i++) {
+          var category = window.data[i];
+          var itemHTML = '<h4>' + category.name + '</h4>';
+          for (var itemCount = 0; itemCount < category.items.length; itemCount++) {
+            var item = category.items[itemCount];
+            var title = item.title;
+            var file = item.file;
+            itemHTML += '<audio id="#file" src="#file"></audio><button class="btn btn-primary btn-lg"  onclick="document.getElementById(\'#file\').play()">#title</button>'
+              .replace(/#file/g, file)
+              .replace(/#title/g, title);
+          }
+          document.getElementById('root').innerHTML += itemHTML;
+        }
+      </script>
+</body>
 </html>
