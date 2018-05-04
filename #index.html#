@@ -1,0 +1,12 @@
+ <html>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg">
+
+  <svg viewBox="0 0  2" height="2em" width="2em" y="0">
+      <polygon points='.577 0, 1.577 0, 1 1, 0 1' />
+  </svg>
+
+
+</body>
+</html> 

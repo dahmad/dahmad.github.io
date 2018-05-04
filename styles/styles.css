@@ -1,0 +1,23 @@
+body {
+   background-color: rgb(0,0,8);
+}
+
+#base {
+  fill: rgb(48,48,64);
+}
+
+#front-face {
+  fill: rgb(72,72,88);
+}
+
+#back-shadow {
+  fill: rgb(0,0,16);
+}
+
+#side-shadow {
+  fill: rgb(24,24,40);
+}
+
+#top {
+  fill: rgb(112,112,96);
+}
