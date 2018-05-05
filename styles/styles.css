@@ -3,21 +3,46 @@ body {
 }
 
 #base {
-  fill: rgb(48,48,64);
+  fill: rgb(12,12,18);
 }
 
 #front-face {
-  fill: rgb(72,72,88);
+  fill: rgb(18,18,24);
 }
 
 #back-shadow {
-  fill: rgb(0,0,16);
+  fill: rgb(0,0,6);
 }
 
 #side-shadow {
-  fill: rgb(24,24,40);
+  fill: rgb(6,6,12);
 }
 
 #top {
-  fill: rgb(112,112,96);
+  fill: rgb(24,24,30);
+}
+
+#base:hover {
+  fill: rgb(18,12,18);
+  transition: all 200ms linear;
+}
+
+#front-face:hover {
+  fill: rgb(24,18,24);
+  transition: all 200ms linear;
+}
+
+#back-shadow:hover {
+  fill: rgb(6,0,6);
+  transition: all 200ms linear;
+}
+
+#side-shadow:hover {
+  fill: rgb(12,6,12);
+  transition: all 200ms linear;
+}
+
+#top:hover {
+  fill: rgb(30,24,30);
+  transition: all 200ms linear;
 }
