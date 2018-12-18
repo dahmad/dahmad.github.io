@@ -31,36 +31,72 @@
 
 </footer><!-- /.post-info --><h1>Numerical Anaylsis near Singularities in RBF Networks</h1>
 <p>Follow along with the source material <a href="http://www.jmlr.org/papers/volume19/16-210/16-210.pdf">here</a></p>
-<h3>The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.</h3>
+<h3>1. The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.</h3>
 <ul>
 <li>
-<p>A parameter space is the set of all possible combinations of values for all parameters in a model<a href="https://en.wikipedia.org/wiki/Parameter_space">.</a></p>
+<p>A parameter space is the set of all possible combinations of values for all parameters in a model. <a href="https://en.wikipedia.org/wiki/Parameter_space">(src)</a></p>
 </li>
 <li>
-<p>A parameter differs from a variable in a model is that they tend to represent inherent properties of a system<a href="https://en.wikipedia.org/wiki/Parameter">.</a></p>
+<p>A parameter differs from a variable in a model in that they tend to represent inherent properties of a system. <a href="https://en.wikipedia.org/wiki/Parameter">(src)</a></p>
 </li>
 <li>
-<p>Learning machine examples provide and brief explanations</p>
+<p>Learning machine examples provided in the paper and brief explanations</p>
 <ol>
-<li>Layered neural networks: used to define a complex, non-linear form of hypotheses using "neurons" that have their input and output mapped through operations called activation functions<a href="http://deeplearning.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/">.</a></li>
-<li>Normal mixtures: where the joint probability of two random variables is normally distributed<a href="https://www.jmp.com/support/help/14/normal-mixtures.shtml">.</a></li>
+<li>Layered neural networks: used to define a complex, non-linear form of hypotheses using "neurons" that have their input and output mapped through operations called activation functions. <a href="http://deeplearning.stanford.edu/tutorial/supervised/MultiLayerNeuralNetworks/">(src)</a></li>
+<li>Normal mixtures: where the joint probability of two random variables is normally distributed. <a href="https://www.jmp.com/support/help/14/normal-mixtures.shtml">(src)</a></li>
 <li>Binomial mixtures</li>
-<li>Bayes networks: represents variables and their "conditional dependencies" in an ordered graphical model<a href="https://en.wikipedia.org/wiki/Bayesian_network">.</a></li>
-<li>Hidden Markov models: a Markov process in an unobserved space<a href="https://en.wikipedia.org/wiki/Hidden_Markov_Models">.</a> A Markov chain describes a sequence of events in which the current event relies entirely on the position the previous event created<a href="https://en.wikipedia.org/wiki/Markov_chain">.</a> </li>
-<li>Boltzmann machines: a type of stochastic recurrent neural network<a href="https://en.wikipedia.org/wiki/Boltzmann_machine">.</a> Stochastic neural networks use random variations to help escape local minima in optimization problems<a href="https://en.wikipedia.org/wiki/Stochastic_neural_network">.</a> Recurrent neural networks are where connections between nodes form a directed graph along a sequence<a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">.</a> A directed graph differs from an undirected graph in that the nodes (or edges) are ordered<a href="https://en.wikipedia.org/wiki/Directed_graph">.</a></li>
-<li>Stochastic context-free grammars: a set of rules that describe all possible strings in a language<a href="https://en.wikipedia.org/wiki/Context-free_grammar">.</a> As noted above, stochastic refers to the introduced randomness.</li>
+<li>Bayes networks: represents variables and their "conditional dependencies" in an ordered graphical model. <a href="https://en.wikipedia.org/wiki/Bayesian_network">(src)</a></li>
+<li>Hidden Markov models: a Markov process in an unobserved space. <a href="https://en.wikipedia.org/wiki/Hidden_Markov_Models">(src)</a> A Markov chain describes a sequence of events in which the current event relies entirely on the position the previous event created. <a href="https://en.wikipedia.org/wiki/Markov_chain">(src)</a> </li>
+<li>Boltzmann machines: a type of stochastic recurrent neural network. <a href="https://en.wikipedia.org/wiki/Boltzmann_machine">(src)</a> Stochastic neural networks use random variations to help escape local minima in optimization problems. <a href="https://en.wikipedia.org/wiki/Stochastic_neural_network">(src)</a> Recurrent neural networks are where connections between nodes form a directed graph along a sequence. <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">(src)</a> A directed graph differs from an undirected graph in that the nodes (or edges) are ordered. <a href="https://en.wikipedia.org/wiki/Directed_graph">(src)</a></li>
+<li>Stochastic context-free grammars: a set of rules that describe all possible strings in a language. <a href="https://en.wikipedia.org/wiki/Context-free_grammar">(src)</a> As noted above, stochastic refers to the introduced randomness.</li>
 </ol>
 </li>
 <li>
-<p>A singular region is where a mathematical object is undefined or where the function "misbehaves." A simple example is that f(x) = 1/x has a singularity at x = 0[.](https://en.wikipedia.org/wiki/Singularity_(mathematics)</p>
+<p>A singular region is where a mathematical object is undefined or where the function "misbehaves." A simple example is that f(x) = 1/x has a singularity at x = 0. [(src)](https://en.wikipedia.org/wiki/Singularity_(mathematics)</p>
 </li>
 <li>
-<p>Fisher information is a measurement of how much information a random variable has about an unknown parameter<a href="https://en.wikipedia.org/wiki/Fisher_information">.</a></p>
+<p>Fisher information is a measurement of how much information a random variable has about an unknown parameter. <a href="https://en.wikipedia.org/wiki/Fisher_information">(src)</a></p>
 </li>
 <li>
-<p>A matrix "degenerates" in that it becomes a singular matrix. Degenerate and singular matrices are defined as not having an inverse<a href="https://math.stackexchange.com/questions/792587/what-is-the-difference-between-singular-matrices-and-degenerate-matrices">.</a> </p>
+<p>A matrix "degenerates" in that it becomes a singular matrix. Degenerate and singular matrices are defined as not having an inverse. <a href="https://math.stackexchange.com/questions/792587/what-is-the-difference-between-singular-matrices-and-degenerate-matrices">(src)</a> </p>
 </li>
-</ul>                </article>
+<li>
+<p>What this sentence means in its entirety is currently a mystery to me.</p>
+</li>
+</ul>
+<h3>2. Learning dynamics are slowed and trapped in plateaus by singularities in the case of feedforward neural networks.</h3>
+<ul>
+<li>
+<p>Learning dynamics? Perhaps some numerical measure of how a model acts?</p>
+</li>
+<li>
+<p>Feedforward neural networks? An artificial neural network where connections between nodes do not form a cycle. <a href="https://en.wikipedia.org/wiki/Feedforward_neural_network">(src)</a></p>
+</li>
+</ul>
+<h3>3. The criteria used to select a model and the standard paradigm described by the Cramer-Rao theorem both fail at singularities.</h3>
+<ul>
+<li>
+<p>Model selection techniques mentioned and brief explanations</p>
+<ol>
+<li>Akaike Information Criterion: estimates the amount of information lost from using a given model to describe some process. <a href="https://en.wikipedia.org/wiki/Akaike_information_criterion">(src)</a></li>
+<li>Bayes Information Criterion: based on the likelihood function but penalizes model complexity. <a href="https://en.wikipedia.org/wiki/Bayesian_information_criterion">(src)</a>. Likelihood is a measure of the likelihood of one value given another <a href="https://en.wikipedia.org/wiki/Likelihood_function">(src)</a></li>
+<li>Minimum Description Length: comparable to Occam's razor. <a href="https://en.wikipedia.org/wiki/Minimum_description_length">(src)</a></li>
+</ol>
+</li>
+<li>
+<p>Cramer Rao theorem: describes estimators of a deterministic but unknown parameter. Relates to Fisher information. <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_bound">(src)</a></p>
+</li>
+</ul>
+<h3>4. A selection tool that accounts for singularities is the widely applicable Bayesian information criteria (WBIC), which was used to solve the Gaussian process regression case.</h3>
+<ul>
+<li>
+<p>WBIC: A generalized version of the afore-described BIC that can be calculated even without knowing the true distribution of the underlying data. <a href="https://en.wikipedia.org/wiki/Watanabe–Akaike_information_criterion">(src)</a></p>
+</li>
+<li>
+<p>Gaussian process regression case: A Gaussian process is a collection of random variables where every combination of the values is normally distributed. This specific tool is used to infer continuous values. It is also known as kriging. <a href="https://en.wikipedia.org/wiki/Gaussian_process">(src)</a></p>
+</li>
+</ul>
+<h3>5.</h3>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="social">
