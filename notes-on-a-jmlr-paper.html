@@ -132,7 +132,38 @@
 <h3>25. An overlap singularity is the set of all parameters where the two center vectors are equal.</h3>
 <h3>26. An elimination singularity is the set of all parameters where the first weight equals zero.</h3>
 <h3>27. This paper explicitly describes the Fisher information matrix for the RBF network, uses average learning equations to examine RBF learning dynamics, and runs numerical simulations to see what happens near singularities.</h3>
-<h3>28.</h3>
+<h3>28. The Fisher information matrix is an indicator of a singularity.</h3>
+<h3>29. For regressions, an unknown teacher function generates y from x plus some additive noise.</h3>
+<h3>30. The training input has a Gaussian distribution and a covariance matrix.</h3>
+<h3>31. The covariance matrix does not change the analytical results so it can be set to the identity matrix.</h3>
+<h3>32. For RBFs, the Fisher information matrix is inner product of is the delta (partial derivative?) of the function of x and theta divided by the delta of theta for two points.</h3>
+<h3>33. This can be further expanded into a much larger matrix where the set of complex numbers Ji and Jj equal some multiplication involving a lower case sigma that I cannot parse.</h3>
+<ul>
+<li>A lot going on here that I don't understand. . . .</li>
+</ul>
+<h3>34. Near singularities, the condition value of the matrix is large and its inverse is near zero.</h3>
+<h3>35. So the inverse of the condition value can measure nearness to a singularity.</h3>
+<h3>36. Using the inverse of the Fisher information matrix as a weight overcomes the influence of singularities in the natural gradient descent method.</h3>
+<h3>37. Obtaining the analytical form of the Fisher information matrix improves the natural gradient descent algorithms moving forward in addition to being fundamental to the following numerical analysis.</h3>
+<h3>38. Artificial experiments were analyzed for low and medium dimensioned examples given a known input distribution.</h3>
+<h3>39. Batch made learning dynamics are similar to those using the averaged learning equations.</h3>
+<h3>40. ALEs don't depend on specific data.</h3>
+<h3>41. ALEs are ordinary differential equations and be solved to obtain student parameters.</h3>
+<h3>42. The function-naught of x equals the function of x theta-naught plus some Gaussian additive noise that is uncorrelated with training input x.</h3>
+<h3>43. Furthermore, this equals the sum of v times the Gaussian function of x and t plus that noise.</h3>
+<h3>44. The analytical form of ALEs is an extremely long equation that I am not prepared to understand. . .</h3>
+<h3>45. There is a generalized error equation defined here as well.</h3>
+<h3>46. Investigating a model with two hidden units is enough to capture thes essence.</h3>
+<h3>47. This can be compared to general cases of RBF networks; all of which is "obtained by solving ALEs for the given teacher parameters and initial student parameters."</h3>
+<h3>48. Analyzing a case where the teacher and student models have two hidden units.</h3>
+<h3>49. Lower-case sigma refers to the spread constant.</h3>
+<h3>50. Focus on an input x with dimension 1 because the global minimum is the point where generalization error is 0.</h3>
+<h3>51. Part of the student parameters are kept invariable in order to create 3D visuals.</h3>
+<h3>52. Two teacher model parameters are set to another initial parameter and only J1 and J2 are modified for overlap singularities.</h3>
+<h3>53. A different set of weights are fixed in other cases.</h3>
+<h3>54. In general, these are only two variable parameters.</h3>
+<h3>55. Plotting learning trajectories is accomplished through the generalization error surface in a 3D figure.</h3>
+<h3>56. Choosing only one teacher function is done to illustrate that RBF networks can be affected by the singularities under different initial states.</h3>
     </div><!-- /.entry-content -->
 
   </article>
