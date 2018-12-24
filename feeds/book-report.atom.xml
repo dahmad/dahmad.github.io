@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Donnie Ahmad - Book Report</title><link href="/" rel="alternate"></link><link href="/feeds/book-report.atom.xml" rel="self"></link><id>/</id><updated>2018-12-14T18:21:00-07:00</updated><entry><title>Notes on a JMLR Paper</title><link href="/notes-on-a-jmlr-paper.html" rel="alternate"></link><published>2018-12-14T18:21:00-07:00</published><updated>2018-12-14T18:21:00-07:00</updated><author><name>Donnie Ahmad</name></author><id>tag:None,2018-12-14:/notes-on-a-jmlr-paper.html</id><summary type="html">&lt;h1&gt;Numerical Anaylsis near Singularities in RBF Networks&lt;/h1&gt;
 &lt;p&gt;Follow along with the source material &lt;a href="http://www.jmlr.org/papers/volume19/16-210/16-210.pdf"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;1. The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A parameter space is the set of all possible combinations of values for all parameters in a model. &lt;a href="https://en.wikipedia.org/wiki/Parameter_space"&gt;(src …&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;Numerical Anaylsis near Singularities in RBF Networks&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;1. The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.&lt;/strong&gt;
+* A parameter space is the set of all possible combinations of values for all parameters in a model. &lt;a href="https://en.wikipedia.org/wiki/Parameter_space"&gt;(src …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Numerical Anaylsis near Singularities in RBF Networks&lt;/h1&gt;
 &lt;p&gt;Follow along with the source material &lt;a href="http://www.jmlr.org/papers/volume19/16-210/16-210.pdf"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;1. The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;1. The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.&lt;/strong&gt;
+* A parameter space is the set of all possible combinations of values for all parameters in a model. &lt;a href="https://en.wikipedia.org/wiki/Parameter_space"&gt;(src)&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A parameter space is the set of all possible combinations of values for all parameters in a model. &lt;a href="https://en.wikipedia.org/wiki/Parameter_space"&gt;(src)&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;A parameter differs from a variable in a model in that they tend to represent inherent properties of a system. &lt;a href="https://en.wikipedia.org/wiki/Parameter"&gt;(src)&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -39,7 +35,7 @@
 &lt;p&gt;What this sentence means in its entirety is currently a mystery to me.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;2. Learning dynamics are slowed and trapped in plateaus by singularities in the case of feedforward neural networks.&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;2. Learning dynamics are slowed and trapped in plateaus by singularities in the case of feedforward neural networks.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Learning dynamics? Perhaps some numerical measure of how a model acts?&lt;/p&gt;
@@ -48,7 +44,7 @@
 &lt;p&gt;Feedforward neural networks? An artificial neural network where connections between nodes do not form a cycle. &lt;a href="https://en.wikipedia.org/wiki/Feedforward_neural_network"&gt;(src)&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;3. The criteria used to select a model and the standard paradigm described by the Cramer-Rao theorem both fail at singularities.&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;3. The criteria used to select a model and the standard paradigm described by the Cramer-Rao theorem both fail at singularities.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Model selection techniques mentioned and brief explanations&lt;/p&gt;
