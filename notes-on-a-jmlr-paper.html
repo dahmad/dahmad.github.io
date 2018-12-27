@@ -36,9 +36,11 @@
 
 </footer><!-- /.post-info -->      <h1>Numerical Anaylsis near Singularities in RBF Networks</h1>
 <p>Follow along with the source material <a href="http://www.jmlr.org/papers/volume19/16-210/16-210.pdf">here</a></p>
-<p><strong>1. The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.</strong>
-* A parameter space is the set of all possible combinations of values for all parameters in a model. <a href="https://en.wikipedia.org/wiki/Parameter_space">(src)</a></p>
+<p><strong>1. The parameter space of most learning machines have singular regions where the Fisher information matrices degenerate.</strong></p>
 <ul>
+<li>
+<p>A parameter space is the set of all possible combinations of values for all parameters in a model. <a href="https://en.wikipedia.org/wiki/Parameter_space">(src)</a></p>
+</li>
 <li>
 <p>A parameter differs from a variable in a model in that they tend to represent inherent properties of a system. <a href="https://en.wikipedia.org/wiki/Parameter">(src)</a></p>
 </li>
@@ -90,7 +92,7 @@
 <p>Cramer Rao theorem: describes estimators of a deterministic but unknown parameter. Relates to Fisher information. <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_bound">(src)</a></p>
 </li>
 </ul>
-<h3>4. A selection tool that accounts for singularities is the widely applicable Bayesian information criteria (WBIC), which was used to solve the Gaussian process regression case.</h3>
+<p><strong>4. A selection tool that accounts for singularities is the widely applicable Bayesian information criteria (WBIC), which was used to solve the Gaussian process regression case.</strong></p>
 <ul>
 <li>
 <p>WBIC: A generalized version of the afore-described BIC that can be calculated even without knowing the true distribution of the underlying data. <a href="https://en.wikipedia.org/wiki/Watanabe–Akaike_information_criterion">(src)</a></p>
@@ -99,7 +101,7 @@
 <p>Gaussian process regression case: A Gaussian process is a collection of random variables where every combination of the values is normally distributed. This specific tool is used to infer continuous values. It is also known as kriging. <a href="https://en.wikipedia.org/wiki/Gaussian_process">(src)</a></p>
 </li>
 </ul>
-<h3>5. The error function is a viable alternative to the traditional log-sigmoid function to understand the learning dynamics for multilayer perceptrons (MLPs).</h3>
+<p><strong>5. The error function is a viable alternative to the traditional log-sigmoid function to understand the learning dynamics for multilayer perceptrons (MLPs).</strong></p>
 <ul>
 <li>
 <p>Error function: if Y is normally distributed with mean 0 and variance 1/2, the error function of x is the probability that Y falls in the range [-x, x] <a href="https://en.wikipedia.org/wiki/Error_function">(src)</a></p>
@@ -111,7 +113,7 @@
 <p>A multilayer perceptron is a feedforward ANN with at least three layers: input, hidden, and output. The latter two of these use a nonlinear activition function. MLPs use backpropagation for training. <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron">(src)</a> An explanation of backpropogation will follow under sentence 8.</p>
 </li>
 </ul>
-<h3>6. The averaged learning equations, the learning dynamics near overlap singularities, and mechanism of plateau phenomena near singularities are presently being studied for radial basis functions, which are a type of feedforward neural networks.</h3>
+<p><strong>6. The averaged learning equations, the learning dynamics near overlap singularities, and mechanism of plateau phenomena near singularities are presently being studied for radial basis functions, which are a type of feedforward neural networks.</strong></p>
 <ul>
 <li>
 <p>I could not find a solid definition of averaged learning equations or learning dynamics</p>
@@ -123,7 +125,7 @@
 <p>A radial basis function is one whose value depends on Euclidean distance from the origin. All values must be real. The sums of these functions can be interpreted as a simple kind of neural network. <a href="https://en.wikipedia.org/wiki/Radial_basis_function">(src)</a></p>
 </li>
 </ul>
-<h3>7. The <em>natural gradient method</em> is a proposed solution to the problem that standard gradient methods are not <em>Fisher efficient</em> and the gradient descent is not steep enough when there are singularities.</h3>
+<p><em><em>7. The </em>natural gradient method</em> is a proposed solution to the problem that standard gradient methods are not <em>Fisher efficient</em> and the gradient descent is not steep enough when there are singularities.</p>
 <ul>
 <li>
 <p>Gradient descent: an optimization algorithm for finding the minimum of a funciton ([src])(https://en.wikipedia.org/wiki/Gradient_descent)</p>
@@ -135,7 +137,7 @@
 <p>Fisher efficiency: a function that finds the minimum possible variance for an unbiased estimator divided by its actual variance <a href="https://en.wikipedia.org/wiki/Efficiency_(statistics)">(src)</a></p>
 </li>
 </ul>
-<h3>8. The difficulty of training deep neural networks using Backpropagation is that it is computationally expensive and presents vanishing gradient problems.</h3>
+<p>**8. The difficulty of training deep neural networks using Backpropagation is that it is computationally expensive and presents vanishing gradient problems.</p>
 <ul>
 <li>
 <p>Backpropagation: a method to calculate a gradient which furthermore is used to calculate weights. It uses the chain rule to iteratively computer gradient for each layer <a href="https://en.wikipedia.org/wiki/Backpropagation">(src)</a></p>
@@ -152,7 +154,7 @@
 <p>Vanishing gradient problem: weights being updated by the partial derivative of the error function fail to update as the gradient value gets smaller <a href="https://en.wikipedia.org/wiki/Vanishing_gradient_problem">(src)</a></p>
 </li>
 </ul>
-<h3>9. One proposed solution is a deep belief network which multilayer Boltzmann machines which are trained layer-by-layer in a greedy fashion.</h3>
+<p>**9. One proposed solution is a deep belief network which multilayer Boltzmann machines which are trained layer-by-layer in a greedy fashion.</p>
 <ul>
 <li>
 <p>Deep belief network: a generative graphical model with latent variables contained within connected layers <a href="https://en.wikipedia.org/wiki/Deep_belief_network">(src)</a></p>
@@ -175,20 +177,20 @@
 <p>Greediness (in algorithms): make locally optimimum choice, perhaps with intention of locating global optimimum or to simply converge on an acceptable answer in an acceptable time frame <a href="https://en.wikipedia.org/wiki/Greedy_algorithm">(src)</a></p>
 </li>
 </ul>
-<h3>10. "[The] robustness of the training effect [for deep neural networks] cannot be guaranteed, even with a pre-training process."</h3>
+<p>**10. "[The] robustness of the training effect [for deep neural networks] cannot be guaranteed, even with a pre-training process."</p>
 <ul>
 <li>Pre-training: rather than randomly assigning weights on the first run then optimizing later, start with the weights from a similar problem and optimize from there <a href="https://stats.stackexchange.com/questions/193082/what-is-pre-training-a-neural-network">(src)</a></li>
 </ul>
-<h3>11. It is not clear why large models remain slow despite limited obstacles</h3>
-<h3>12. Saddle points may cause pain points.</h3>
+<p>**11. It is not clear why large models remain slow despite limited obstacles</p>
+<p>**12. Saddle points may cause pain points.</p>
 <ul>
 <li>Saddle points: orthogonal slopes of 0 give false appearance of being a local minimum or maximum <a href="https://en.wikipedia.org/wiki/Saddle_point">(src)</a></li>
 </ul>
-<h3>13. Gradient descent can find a band of low critical points, which are local minima of "high quality."</h3>
+<p>**13. Gradient descent can find a band of low critical points, which are local minima of "high quality."</p>
 <ul>
 <li>Critical point: when the derivative of a differentiable function equals 0 <a href="https://en.wikipedia.org/wiki/Critical_point_(mathematics)">(src)</a></li>
 </ul>
-<h3>14. This paper contends that "points in the elimination singularity are saddles, the points in the overlap singularity are local minima . . . and the generalization error surface near the overlap singularity is very flat."</h3>
+<p>**14. This paper contends that "points in the elimination singularity are saddles, the points in the overlap singularity are local minima . . . and the generalization error surface near the overlap singularity is very flat."</p>
 <ul>
 <li>
 <p>Elimination singularities appear to be but are not local extrema</p>
@@ -200,43 +202,43 @@
 <p>Generalization error: how well the model performs on unseen data <a href="https://en.wikipedia.org/wiki/Generalization_error">(src)</a></p>
 </li>
 </ul>
-<h3>15. The error of deep linear neural networks does not change under a scaling transformation.</h3>
+<p>**15. The error of deep linear neural networks does not change under a scaling transformation.</p>
 <ul>
 <li>scaling transformation: enlarge or shrink an object the same amount in all directions <a href="https://en.wikipedia.org/wiki/Scaling_(geometry)">(src)</a></li>
 </ul>
-<h3>16. Scaling symmetries are similar to elimination singularities.</h3>
+<p>**16. Scaling symmetries are similar to elimination singularities.</p>
 <ul>
 <li>Scaling symmetries: similar to self-similarity and fractals <a href="https://en.wikipedia.org/wiki/Scale_invariance">(src)</a></li>
 </ul>
-<h3>17. The learning dynamics of deep belief nets, deep convolutional neural networks, and deep multilayer perceptrons may be affected by singularities.</h3>
-<h3>18. Singularities are worth studying because of overfitting issues and to improve learning efficiency</h3>
-<h3>19. There are two types of singularities in the parameter space of RBF networks: overlap and elimination singularities.</h3>
-<h3>20. Dynamics near singularities are studied through simulation, and it is observed that the behavior is similar between RBF networks, multilayer perceptrons and Gaussian mixtures (and possibly other feedforward neural networks)</h3>
-<h3>21. An RBF Network with k hidden units is the function of x and theta where x is a point in a real coordinate space that denotes the input vector and theta represents all of the parameters of the model.</h3>
-<h3>22. The function equals the sum from 1 to k of the weight of the neuron times the Guassian function of x and J (the center vector for the neuron which is also a point in a real coordinate space).</h3>
-<h3>23. If two hidden units overlap, then the first weight times the Gaussian function of x and the first parameter plus the second weight times the Gaussian function of x and the second parameter equals the sum of the weights times the Gaussian function of x and the first parameter regardless of what the weights actually are.</h3>
-<h3>24. Therefore, w equals the sum of the two parameters even if you don't know the individual weights.</h3>
-<h3>25. An overlap singularity is the set of all parameters where the two center vectors are equal.</h3>
-<h3>26. An elimination singularity is the set of all parameters where the first weight equals zero.</h3>
-<h3>27. This paper explicitly describes the Fisher information matrix for the RBF network, uses average learning equations to examine RBF learning dynamics, and runs numerical simulations to see what happens near singularities.</h3>
-<h3>28. The Fisher information matrix is an indicator of a singularity.</h3>
-<h3>29. For regressions, an unknown teacher function generates y from x plus some additive noise.</h3>
+<p>**17. The learning dynamics of deep belief nets, deep convolutional neural networks, and deep multilayer perceptrons may be affected by singularities.</p>
+<p>**18. Singularities are worth studying because of overfitting issues and to improve learning efficiency</p>
+<p>**19. There are two types of singularities in the parameter space of RBF networks: overlap and elimination singularities.</p>
+<p>**20. Dynamics near singularities are studied through simulation, and it is observed that the behavior is similar between RBF networks, multilayer perceptrons and Gaussian mixtures (and possibly other feedforward neural networks)</p>
+<p>**21. An RBF Network with k hidden units is the function of x and theta where x is a point in a real coordinate space that denotes the input vector and theta represents all of the parameters of the model.</p>
+<p>**22. The function equals the sum from 1 to k of the weight of the neuron times the Guassian function of x and J (the center vector for the neuron which is also a point in a real coordinate space).</p>
+<p>**23. If two hidden units overlap, then the first weight times the Gaussian function of x and the first parameter plus the second weight times the Gaussian function of x and the second parameter equals the sum of the weights times the Gaussian function of x and the first parameter regardless of what the weights actually are.</p>
+<p>**24. Therefore, w equals the sum of the two parameters even if you don't know the individual weights.</p>
+<p>**25. An overlap singularity is the set of all parameters where the two center vectors are equal.</p>
+<p>**26. An elimination singularity is the set of all parameters where the first weight equals zero.</p>
+<p>**27. This paper explicitly describes the Fisher information matrix for the RBF network, uses average learning equations to examine RBF learning dynamics, and runs numerical simulations to see what happens near singularities.</p>
+<p>**28. The Fisher information matrix is an indicator of a singularity.</p>
+<p>**29. For regressions, an unknown teacher function generates y from x plus some additive noise.</p>
 <ul>
 <li>teacher function: could not find a definition</li>
 </ul>
-<h3>30. The training input has a Gaussian distribution and a covariance matrix.</h3>
+<p>**30. The training input has a Gaussian distribution and a covariance matrix.</p>
 <ul>
 <li>Covariance matrix: an element at position i,j holds the covariance value for the i-th and j-th value of a random vector (variable with multiple dimensions) <a href="https://en.wikipedia.org/wiki/Covariance_matrix">(src)</a></li>
 </ul>
-<h3>31. The covariance matrix does not change the analytical results so it can be set to the identity matrix.</h3>
+<p>**31. The covariance matrix does not change the analytical results so it can be set to the identity matrix.</p>
 <ul>
 <li>identity matrix: a matrix where the diagonal from upper left to bottom right has value 1 and the rest have value 0 <a href="https://en.wikipedia.org/wiki/Identity_matrix">(src)</a></li>
 </ul>
-<h3>32. For RBFs, the Fisher information matrix is inner product of is the delta (partial derivative?) of the function of x and theta divided by the delta of theta for two points.</h3>
+<p>**32. For RBFs, the Fisher information matrix is inner product of is the delta (partial derivative?) of the function of x and theta divided by the delta of theta for two points.</p>
 <ul>
 <li>Partial derivative: for a function with multiple variables, it is the derivative of one of those variables <a href="https://en.wikipedia.org/wiki/Partial_derivative">(src)</a></li>
 </ul>
-<h3>33. This can be further expanded into a much larger matrix where the set of complex numbers Ji and Jj equal some multiplication involving a lower case sigma that I cannot parse.</h3>
+<p>**33. This can be further expanded into a much larger matrix where the set of complex numbers Ji and Jj equal some multiplication involving a lower case sigma that I cannot parse.</p>
 <ul>
 <li>
 <p>A lot going on here that I don't understand. . . .</p>
@@ -245,7 +247,7 @@
 <p>lower case sigma could refer to standard deviation or the sigmoid function (defined above) <a href="https://en.wikipedia.org/wiki/Sigma">(src)</a></p>
 </li>
 </ul>
-<h3>34. Near singularities, the condition value of the matrix is large and its inverse is near zero.</h3>
+<p>**34. Near singularities, the condition value of the matrix is large and its inverse is near zero.</p>
 <ul>
 <li>
 <p>Condition number: how much the output can change given a small change in the input <a href="https://en.wikipedia.org/wiki/Condition_number">(src)</a></p>
@@ -254,37 +256,37 @@
 <p>The inverse being near zero appears to mean that large changes in the input have no change on the output</p>
 </li>
 </ul>
-<h3>35. So the inverse of the condition value can measure nearness to a singularity.</h3>
-<h3>36. Using the inverse of the Fisher information matrix as a weight overcomes the influence of singularities in the natural gradient descent method.</h3>
+<p>**35. So the inverse of the condition value can measure nearness to a singularity.</p>
+<p>**36. Using the inverse of the Fisher information matrix as a weight overcomes the influence of singularities in the natural gradient descent method.</p>
 <ul>
 <li>"The Cramer-Rao bound states that the inverse of the Fisher information is a lower bound on the variance of any unbiased estimator of [theta]" <a href="https://en.wikipedia.org/wiki/Fisher_information">(src)</a></li>
 </ul>
-<h3>37. Obtaining the analytical form of the Fisher information matrix improves the natural gradient descent algorithms moving forward in addition to being fundamental to the following numerical analysis.</h3>
-<h3>38. Artificial experiments were analyzed for low and medium dimensioned examples given a known input distribution.</h3>
-<h3>39. Batch made learning dynamics are similar to those using the averaged learning equations.</h3>
+<p>**37. Obtaining the analytical form of the Fisher information matrix improves the natural gradient descent algorithms moving forward in addition to being fundamental to the following numerical analysis.</p>
+<p>**38. Artificial experiments were analyzed for low and medium dimensioned examples given a known input distribution.</p>
+<p>**39. Batch made learning dynamics are similar to those using the averaged learning equations.</p>
 <ul>
 <li>Still can't grasp a clear defition of either learning dynamics or average learning equations, and now I can't find anything for batch mode</li>
 </ul>
-<h3>40. ALEs don't depend on specific data.</h3>
-<h3>41. ALEs are ordinary differential equations and can be solved to obtain student parameters.</h3>
-<h3>42. The function-naught of x equals the function of x theta-naught plus some Gaussian additive noise that is uncorrelated with training input x.</h3>
+<p>**40. ALEs don't depend on specific data.</p>
+<p>**41. ALEs are ordinary differential equations and can be solved to obtain student parameters.</p>
+<p>**42. The function-naught of x equals the function of x theta-naught plus some Gaussian additive noise that is uncorrelated with training input x.</p>
 <ul>
 <li>Gaussian noise: statistical noise that has a probability density function equal to the normal distribution <a href="">(src)</a> where the probability density function </li>
 </ul>
-<h3>43. Furthermore, this equals the sum of v times the Gaussian function of x and t plus that noise.</h3>
-<h3>44. The analytical form of ALEs is an extremely long equation that I am not prepared to understand. . .</h3>
-<h3>45. There is a generalized error equation defined here as well.</h3>
-<h3>46. Investigating a model with two hidden units is enough to capture thes essence.</h3>
-<h3>47. This can be compared to general cases of RBF networks; all of which is "obtained by solving ALEs for the given teacher parameters and initial student parameters."</h3>
-<h3>48. Analyzing a case where the teacher and student models have two hidden units.</h3>
-<h3>49. Lower-case sigma refers to the spread constant.</h3>
-<h3>50. Focus on an input x with dimension 1 because the global minimum is the point where generalization error is 0.</h3>
-<h3>51. Part of the student parameters are kept invariable in order to create 3D visuals.</h3>
-<h3>52. Two teacher model parameters are set to another initial parameter and only J1 and J2 are modified for overlap singularities.</h3>
-<h3>53. A different set of weights are fixed in other cases.</h3>
-<h3>54. In general, these are only two variable parameters.</h3>
-<h3>55. Plotting learning trajectories is accomplished through the generalization error surface in a 3D figure.</h3>
-<h3>56. Choosing only one teacher function is done to illustrate that RBF networks can be affected by the singularities under different initial states.</h3>
+<p>**43. Furthermore, this equals the sum of v times the Gaussian function of x and t plus that noise.</p>
+<p>**44. The analytical form of ALEs is an extremely long equation that I am not prepared to understand. . . </p>
+<p>**45. There is a generalized error equation defined here as well.</p>
+<p>**46. Investigating a model with two hidden units is enough to capture thes essence.</p>
+<p>**47. This can be compared to general cases of RBF networks; all of which is "obtained by solving ALEs for the given teacher parameters and initial student parameters."</p>
+<p>**48. Analyzing a case where the teacher and student models have two hidden units.</p>
+<p>**49. Lower-case sigma refers to the spread constant.</p>
+<p>**50. Focus on an input x with dimension 1 because the global minimum is the point where generalization error is 0.</p>
+<p>**51. Part of the student parameters are kept invariable in order to create 3D visuals.</p>
+<p>**52. Two teacher model parameters are set to another initial parameter and only J1 and J2 are modified for overlap singularities.</p>
+<p>**53. A different set of weights are fixed in other cases.</p>
+<p>**54. In general, these are only two variable parameters.</p>
+<p>**55. Plotting learning trajectories is accomplished through the generalization error surface in a 3D figure.</p>
+<p>**56. Choosing only one teacher function is done to illustrate that RBF networks can be affected by the singularities under different initial states.</p>
     </div><!-- /.entry-content -->
 
   </article>
